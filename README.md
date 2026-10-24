@@ -1,57 +1,45 @@
 # Btonmed Website
 
-Frontend for Btonmed: medical equipment sales, leasing, servicing, calibration and the Advanced Biomedical Engineering Bootcamp.
+**Innovation · Skills · Healthier Tomorrow**
 
-Built with React 18, Vite 6, Tailwind CSS 3, Framer Motion, Lucide icons and React Icons (brand icons).
+The official website of **Btonmed**, a biomedical equipment marketplace and engineering services company.
+Btonmed helps healthcare facilities access reliable medical technology and keep it running, and trains the
+next generation of biomedical engineers.
 
-## Run
+## What Btonmed offers
 
-Requires Node 20+ (an `.nvmrc` pins Node 22).
+- **Medical equipment sales:** new and refurbished imaging, diagnostic and theatre equipment
+- **Equipment leasing:** flexible plans without a heavy upfront investment
+- **Servicing and repairs:** fault diagnosis and board-level repairs that reduce downtime
+- **Maintenance and calibration:** preventive maintenance that keeps readings and images accurate
+- **Technical support and engineering:** installation, commissioning and user training
+- **Biomedical Engineering Bootcamp:** a 3-month hands-on program, Ksh 60,000
 
-```bash
-nvm use
-npm install
-npm run dev      # local development
-npm run build    # production build in dist/
-npm run preview  # preview the production build
-```
+Specialist areas include C-arms, X-ray, ultrasound, fluoroscopy, mammography and CT, as well as theatre,
+dialysis and critical care equipment.
 
-## Pages
+## The website
 
-| Route | Page |
+| Page | What visitors find |
 |---|---|
-| `/` | Home: overview, featured equipment, bootcamp promo, how it works |
-| `/services` | Services and biomedical engineering |
-| `/equipment` | Filterable equipment catalogue, buy vs lease |
-| `/academy` | Biomedical Engineering Bootcamp: curriculum, pricing, FAQ |
-| `/about` | Company story and values |
-| `/contact` | Contact channels, enquiry form, FAQ |
+| **Home** | Overview of the three pillars, featured equipment, bootcamp promotion and how it works |
+| **Services** | Each service in detail, with the engineering capabilities behind them |
+| **Equipment** | Filterable catalogue with one-tap price enquiries, and buy-or-lease options |
+| **Academy** | The bootcamp: curriculum, pricing, who should join and FAQs |
+| **About** | Company story, values and why customers choose Btonmed |
+| **Contact** | WhatsApp, phone and email, an enquiry form and FAQs |
 
-Light and dark themes follow the visitor's system setting by default; the toggle in the navbar remembers their choice.
+**Highlights**
 
-## Editing content
+- Enquiries go straight to Btonmed on WhatsApp, phone or email, with messages pre-filled
+- Light and dark themes, and a layout that works on phones from 320px up to large desktops
+- Links to Btonmed's Instagram, Facebook and TikTok
+- Search-engine ready: page titles, descriptions, sitemap and share previews for WhatsApp and Facebook
 
-All text, contact details, social links, services, equipment, bootcamp details and FAQs live in
-`src/data/site.js`. Brand colours and theme tokens are in `tailwind.config.js` and `src/index.css`.
+Built with React, Vite and Tailwind CSS. Setup, hosting and maintenance instructions are in
+[DEPLOYMENT.md](DEPLOYMENT.md).
 
-## Deploying
+## Contact
 
-See **[DEPLOYMENT.md](DEPLOYMENT.md)** for step-by-step instructions (Netlify, Vercel or cPanel),
-domain setup and getting listed on Google. In short: set `SITE_URL` in `.env`, run `npm run build`,
-and upload the `dist/` folder.
-
-## Images
-
-No photo on the site shows people. Most photos are Btonmed's own equipment photos (cropped from company flyers).
-Two equipment photos come from Wikimedia Commons with no copyright restrictions (free for commercial use, no credit required):
-
-| File | Source | Licence |
-|---|---|---|
-| `xray-fluoroscopy-room.jpg` | "Fluoroscopy room with control space", Mikael Häggström | CC0 |
-| `ventilator.jpg` | "Respirator icu", Blogotron | CC0 |
-
-`mammography-unit.jpg` was supplied by Btonmed from a Google Images result; its original owner and licence are **unknown**.
-Confirm you have the right to use it, or replace it with your own photo, before launch.
-
-
-Replace any of these with your own high-resolution photos in `src/assets/img/` using the same filenames (higher-resolution originals will look sharper).
+- **WhatsApp / phone:** +254 758 596 947
+- **Email:** btonmedengineering@gmail.com

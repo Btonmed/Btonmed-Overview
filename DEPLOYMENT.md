@@ -94,6 +94,7 @@ To update later: rebuild and re-upload the contents of `dist/`, replacing the ol
 - [ ] WhatsApp, call and email buttons work on a phone
 - [ ] Social icons open the Btonmed Instagram, Facebook and TikTok pages
 - [ ] Sitemap submitted in Google Search Console
+- [ ] Rights to `mammography-unit.jpg` confirmed, or the photo replaced
 
 ## What each hosting file does
 
@@ -107,3 +108,25 @@ To update later: rebuild and re-upload the contents of `dist/`, replacing the ol
 | `public/site.webmanifest` + icons | All browsers | Home-screen icon and app name on phones |
 | `public/og-image.jpg` | WhatsApp, Facebook, X, LinkedIn | Preview image when the link is shared |
 | `.env` (`SITE_URL`) | Build | Generates `sitemap.xml`, `robots.txt` and share tags |
+
+---
+
+## Maintaining the site
+
+**Editing content.** All text, contact details, social links, services, equipment, bootcamp details and FAQs
+live in `src/data/site.js`. Brand colours and theme tokens are in `tailwind.config.js` and `src/index.css`.
+For local development run `npm run dev`; `npm run preview` serves the production build.
+
+**Images.** No photo on the site shows people. Most photos are Btonmed's own equipment photos (cropped from
+company flyers). Two come from Wikimedia Commons with no copyright restrictions (free for commercial use,
+no credit required):
+
+| File | Source | Licence |
+|---|---|---|
+| `xray-fluoroscopy-room.jpg` | "Fluoroscopy room with control space", Mikael Häggström | CC0 |
+| `ventilator.jpg` | "Respirator icu", Blogotron | CC0 |
+
+`mammography-unit.jpg` was supplied by Btonmed from a Google Images result; its original owner and licence
+are **unknown**. Confirm you have the right to use it, or replace it with your own photo, before launch.
+
+To swap any photo, replace the file in `src/assets/img/` using the same filename. Higher-resolution originals look sharper.
