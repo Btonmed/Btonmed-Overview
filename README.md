@@ -36,8 +36,7 @@ dialysis and critical care equipment.
 - Links to Btonmed's Instagram, Facebook and TikTok
 - Search-engine ready: page titles, descriptions, sitemap and share previews for WhatsApp and Facebook
 
-Built with React, Vite and Tailwind CSS. Setup, hosting and maintenance instructions are in
-[DEPLOYMENT.md](DEPLOYMENT.md).
+Built with React, Vite and Tailwind CSS.
 
 ## Contact
 
