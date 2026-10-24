@@ -1,0 +1,13 @@
+{
+  "name": "Btonmed",
+  "short_name": "Btonmed",
+  "description": "Medical equipment sales, leasing, servicing and biomedical engineering training.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1D54B2",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

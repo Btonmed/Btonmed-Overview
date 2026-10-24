@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --surface: 255 255 255;
+    --surface-soft: 247 245 241;
+    --card: 255 255 255;
+    --fg: 11 27 54;
+    --muted: 82 96 122;
+    --line: 220 230 247;
+    --tint: 238 243 251;
+    --brand-fg: 29 84 178;
+    --accent-fg: 19 134 108;
+    --accent-tint: 232 245 241;
+    color-scheme: light;
+  }
+  .dark {
+    --surface: 6 14 28;
+    --surface-soft: 9 21 40;
+    --card: 13 29 54;
+    --fg: 234 240 250;
+    --muted: 156 173 200;
+    --line: 30 54 92;
+    --tint: 19 40 74;
+    --brand-fg: 130 170 240;
+    --accent-fg: 72 205 164;
+    --accent-tint: 12 48 42;
+    color-scheme: dark;
+  }
+  html {
+    scroll-padding-top: 6rem;
+  }
+  body {
+    @apply bg-surface font-sans text-fg antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+  ::selection {
+    @apply bg-brand-600 text-white;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-600 ring-offset-2 ring-offset-surface;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent-fg;
+  }
+  .card {
+    @apply rounded-3xl border border-line bg-card transition-all duration-500;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-brand-600/60 hover:shadow-glow;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-sm font-semibold transition-all duration-300 active:scale-[0.98];
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white shadow-glow hover:bg-brand-700 hover:shadow-glow-lg;
+  }
+  .btn-accent {
+    @apply btn bg-accent-600 text-white shadow-glow-accent hover:bg-accent-700;
+  }
+  .btn-outline {
+    @apply btn border border-line bg-card text-brand-fg hover:border-brand-600 hover:bg-tint;
+  }
+  .btn-wa {
+    @apply btn bg-[#25D366] text-white shadow-glow-wa hover:bg-[#1FBF5B];
+  }
+  .glow-orb {
+    @apply pointer-events-none absolute rounded-full blur-[110px] animate-breathe;
+  }
+}
