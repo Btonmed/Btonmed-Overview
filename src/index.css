@@ -31,6 +31,10 @@
   }
   html {
     scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
   }
   body {
     @apply bg-surface font-sans text-fg antialiased;

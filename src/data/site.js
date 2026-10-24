@@ -11,9 +11,9 @@ import {
   HeartPulse,
   Radiation,
   GraduationCap,
-  BookOpen,
   Users,
-  Briefcase,
+  ShieldCheck,
+  Zap,
 } from 'lucide-react'
 
 import cArm from '../assets/img/c-arm.jpg'
@@ -245,7 +245,7 @@ export const acquireOptions = [
 export const academyFacts = [
   { label: 'Duration', value: '3 Months' },
   { label: 'Program fee', value: 'Ksh 60,000' },
-  { label: 'Format', value: 'Hands-on' },
+  { label: 'Format', value: 'Theory + practical' },
   { label: 'Outcome', value: 'Career ready' },
 ]
 
@@ -267,21 +267,40 @@ export const academyIncludes = [
   'Career-ready skills and better prospects',
 ]
 
-export const academyAudience = [
-  { icon: BookOpen, title: 'Students', text: 'Biomedical and electrical engineering students who want practical skills.' },
-  { icon: GraduationCap, title: 'Graduates', text: 'Fresh graduates looking to become job-ready in medical equipment.' },
-  { icon: Wrench, title: 'Technicians', text: 'Practising technicians ready to step up to advanced imaging.' },
-  { icon: Briefcase, title: 'Career changers', text: 'Anyone with a passion for technology and healthcare.' },
+// Entry requirements: who can join
+export const academyEligibility = [
+  { field: 'Medical Engineering', level: 'Diploma / Degree' },
+  { field: 'Electrical Engineering', level: 'Degree' },
+  { field: 'Mechatronics', level: 'Degree' },
+]
+
+// Recommended toolkit learners bring
+export const academyToolkit = [
+  { icon: Gauge, title: 'Digital multimeter', text: 'Rated up to 1000V' },
+  { icon: ShieldCheck, title: 'Personal protective equipment', text: 'Appropriate PPE for workshop and hospital work' },
+  { icon: Zap, title: 'Phase tester', text: 'For safe live-circuit checks' },
+]
+
+export const academyHandTools = [
+  'Screwdrivers, incl. precision',
+  'Torx & Allen keys',
+  'Spanners (8–14 mm)',
+  'Pliers & long-nose pliers',
+  'Wire stripper / cutter',
 ]
 
 export const academyFaqs = [
   {
     q: 'How long is the bootcamp and how much does it cost?',
-    a: 'The Advanced Biomedical Engineering Program is a 3-month hands-on bootcamp. The full program fee is Ksh 60,000.',
+    a: 'The Advanced Biomedical Engineering Program runs for 3 months and combines theory with practical training. The full program fee is Ksh 60,000.',
   },
   {
     q: 'Who can join?',
-    a: 'Students, graduates, technicians and anyone with an interest in medical equipment who wants practical, career-ready skills.',
+    a: 'The bootcamp is open to holders of a Diploma or Degree in Medical Engineering, or a Degree in Electrical Engineering or Mechatronics.',
+  },
+  {
+    q: 'Do I need to bring my own tools?',
+    a: 'Yes. We recommend a digital multimeter (up to 1000V), appropriate PPE and a basic tool kit: screwdrivers, Torx and Allen keys, spanners (8–14 mm), pliers, a wire stripper and a phase tester.',
   },
   {
     q: 'Will I train on real equipment?',
